@@ -1,0 +1,299 @@
+{
+  "id": "0c8e4240-72f5-4928-a7ab-3e18681b4256",
+  "version": "2.0",
+  "name": "Acklen",
+  "url": "https://www.shino.de",
+  "tests": [{
+    "id": "afb031ec-7e95-4235-a196-ab6767fa8c33",
+    "name": "Acklen_1",
+    "commands": [{
+      "id": "09eef67d-3d2c-490d-8845-3d0a5d23586b",
+      "comment": "",
+      "command": "open",
+      "target": "/parkcalc/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2edd669e-1b1c-47be-a22f-23f0c32b06ea",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1916x1038",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4c3e15d-ec64-447d-894b-a66d6c1c77c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) img",
+      "targets": [
+        ["css=tr:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='Pick a date']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4171",
+      "windowTimeout": 2000
+    }, {
+      "id": "8e16b2e0-d9c4-4849-ac3d-747b6a678589",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "971583f5-985a-464a-a406-9530194b7113",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4171}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da951027-659a-4e4f-bef6-8c0c12c87aae",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59d18dea-166e-4df2-a02b-95c644b0f440",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b96885f-5ccc-411d-8e61-56f9281fb79e",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) img",
+      "targets": [
+        ["css=tr:nth-child(3) img", "css:finder"],
+        ["xpath=(//img[@alt='Pick a date'])[2]", "xpath:img"],
+        ["xpath=//tr[3]/td[2]/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6878",
+      "windowTimeout": 2000
+    }, {
+      "id": "a9fa527e-3131-4801-b850-b7c23ce39743",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6878}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bffaf4bd-9f1c-4145-a8fd-5214e34609f3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dd92009-5957-43f6-80bd-88c9f02fe803",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d6eac8a-d108-4cfa-b1c9-d6b4b706666b",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) input:nth-child(5)",
+      "targets": [
+        ["css=tr:nth-child(3) input:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@name='LeavingTimeAMPM'])[2]", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eee033cf-6925-497b-9a51-e4bcad725dbb",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > .BodyCopy:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(3) > .BodyCopy:nth-child(2)", "css:finder"],
+        ["xpath=//tr[3]/td[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1248d80-9d7d-4315-951c-26c7917794a8",
+      "comment": "",
+      "command": "click",
+      "target": "id=LeavingTime",
+      "targets": [
+        ["id=LeavingTime", "id"],
+        ["name=LeavingTime", "name"],
+        ["css=#LeavingTime", "css:finder"],
+        ["xpath=//input[@id='LeavingTime']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e72d098-08e5-4abf-a0d0-d71bc650a710",
+      "comment": "",
+      "command": "type",
+      "target": "id=LeavingTime",
+      "targets": [
+        ["id=LeavingTime", "id"],
+        ["name=LeavingTime", "name"],
+        ["css=#LeavingTime", "css:finder"],
+        ["xpath=//input[@id='LeavingTime']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input[2]", "xpath:position"]
+      ],
+      "value": "1:00"
+    }, {
+      "id": "f4176c42-6cdf-4840-ad3d-ecdf837592df",
+      "comment": "",
+      "command": "click",
+      "target": "name=Submit",
+      "targets": [
+        ["name=Submit", "name"],
+        ["css=form > input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='Submit']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56966a67-1366-46ef-822a-90f7a8c49ac8",
+      "comment": "",
+      "command": "click",
+      "target": "id=ParkingLot",
+      "targets": [
+        ["id=ParkingLot", "id"],
+        ["name=ParkingLot", "name"],
+        ["css=#ParkingLot", "css:finder"],
+        ["xpath=//select[@id='ParkingLot']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e66a0d7f-e219-4e4a-aa3a-93b5efa43943",
+      "comment": "",
+      "command": "select",
+      "target": "id=ParkingLot",
+      "targets": [],
+      "value": "label=Short-Term Parking"
+    }, {
+      "id": "903a534f-e91c-48d1-beda-9efde3caf1b0",
+      "comment": "",
+      "command": "click",
+      "target": "name=Submit",
+      "targets": [
+        ["name=Submit", "name"],
+        ["css=form > input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='Submit']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b001db3c-f5cb-473b-8daf-b27ff6940bb1",
+      "comment": "",
+      "command": "click",
+      "target": "id=ParkingLot",
+      "targets": [
+        ["id=ParkingLot", "id"],
+        ["name=ParkingLot", "name"],
+        ["css=#ParkingLot", "css:finder"],
+        ["xpath=//select[@id='ParkingLot']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a38104dd-87d7-4a6c-9bbb-1597e3d085fe",
+      "comment": "",
+      "command": "select",
+      "target": "id=ParkingLot",
+      "targets": [],
+      "value": "label=Economy Parking"
+    }, {
+      "id": "6032c13a-c44a-44c9-9b74-99370e58424f",
+      "comment": "",
+      "command": "click",
+      "target": "name=Submit",
+      "targets": [
+        ["name=Submit", "name"],
+        ["css=form > input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='Submit']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0fe51d8-8717-4085-8d84-de5c936cbc9c",
+      "comment": "",
+      "command": "click",
+      "target": "id=ParkingLot",
+      "targets": [
+        ["id=ParkingLot", "id"],
+        ["name=ParkingLot", "name"],
+        ["css=#ParkingLot", "css:finder"],
+        ["xpath=//select[@id='ParkingLot']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "540d74fc-2b24-435b-b7f3-b5f0edb0d8eb",
+      "comment": "",
+      "command": "select",
+      "target": "id=ParkingLot",
+      "targets": [],
+      "value": "label=Long-Term Garage Parking"
+    }, {
+      "id": "48d2d34f-43da-4c82-b8b0-ce1303e36433",
+      "comment": "",
+      "command": "click",
+      "target": "name=Submit",
+      "targets": [
+        ["name=Submit", "name"],
+        ["css=form > input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='Submit']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30380aa9-eb5a-4cb8-ae05-e62ec56ccbc3",
+      "comment": "",
+      "command": "click",
+      "target": "id=ParkingLot",
+      "targets": [
+        ["id=ParkingLot", "id"],
+        ["name=ParkingLot", "name"],
+        ["css=#ParkingLot", "css:finder"],
+        ["xpath=//select[@id='ParkingLot']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e06179c-bfbe-4694-b68c-86905ca08699",
+      "comment": "",
+      "command": "select",
+      "target": "id=ParkingLot",
+      "targets": [],
+      "value": "label=Long-Term Surface Parking"
+    }, {
+      "id": "b408bf6d-d684-4b52-b524-c2a6915195bb",
+      "comment": "",
+      "command": "click",
+      "target": "name=Submit",
+      "targets": [
+        ["name=Submit", "name"],
+        ["css=form > input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='Submit']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a1826604-3647-4004-a7f9-3f7663070294",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["afb031ec-7e95-4235-a196-ab6767fa8c33"]
+  }],
+  "urls": ["https://www.shino.de/"],
+  "plugins": []
+}
